@@ -1,0 +1,10 @@
+@import '../../../node_modules/bulma/sass/utilities/initial-variables.sass';
+
+$blue: #2e7c99;
+$green: #00d875;
+$primary: $blue;
+$link: $green;
+
+@import '../../../node_modules/bulma/bulma.sass';
+@import '../../../node_modules/bulma-accordion/dist/css/bulma-accordion.sass';
+@import './main.scss';

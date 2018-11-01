@@ -1,0 +1,16 @@
+{
+    "name": "Whenu",
+    "type": "static",
+    "static": {
+        "public": "dist",
+        "rewrites": [
+            {
+                "source": "**",
+                "destination": "/index.html"
+            }
+        ]
+    },
+    "engines": {
+        "node": "^8.0.0"
+    }
+}

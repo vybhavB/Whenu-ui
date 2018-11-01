@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
+
+body {
+    margin: 0;
+}
+
+#app {
+    font-family: 'Merriweather Sans', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: red;
+}
+
+main {
+    text-align: center;
+}
+
+.hero-body {
+    padding: 1rem 1.5rem;
+}
+
+.navelem {
+    background: $blue;
+}
+
+.whenu {
+    display: inline;
+}
+
+.tags {
+    margin-left: auto;
+    //width: 100%;
+}
+
+.accordion .accordions {
+    background: white;
+}
