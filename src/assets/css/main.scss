@@ -29,9 +29,17 @@ main {
 
 .tags {
     margin-left: auto;
-    //width: 100%;
+    display: inline;
+    // width: 100%;
+}
+.accordion-content {
+    padding: 0;
 }
 
-.accordion .accordions {
-    background: white;
+#section {
+    margin-right: 5px;
+}
+
+.tabs {
+    display: inline;
 }

@@ -1,5 +1,6 @@
 {
     "name": "Whenu",
+    "alias": "whenu.vybhavb.com",
     "type": "static",
     "static": {
         "public": "dist",

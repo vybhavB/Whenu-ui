@@ -1,9 +1,11 @@
 @import '../../../node_modules/bulma/sass/utilities/initial-variables.sass';
 
-$blue: #2e7c99;
+$blue: #16b3ec;
 $green: #00d875;
+$cream: rgb(214, 214, 214);
 $primary: $blue;
 $link: $green;
+$light: $cream;
 
 @import '../../../node_modules/bulma/bulma.sass';
 @import '../../../node_modules/bulma-accordion/dist/css/bulma-accordion.sass';
