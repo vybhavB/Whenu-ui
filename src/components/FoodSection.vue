@@ -2,6 +2,7 @@
 
   <div class="FoodSection">
     <section class="accordions">
+
       <article class="accordion" style="background-color:white" :class="{'is-active':(mealPeriod===timeOfDay)}">
         <div class="accordion-header toggle">
           <p>{{mealPeriod}}</p>
@@ -27,6 +28,84 @@
           </div>
         </div>
       </article>
+
+      <article class="accordion" style="background-color:white" :class="{'is-active':(mealPeriod===timeOfDay)}">
+        <div class="accordion-header toggle">
+          <p>{{mealPeriod}}</p>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content" style="padding:0;">
+            <div class="panel">
+              <div class="panel-block" v-for="elem in this.foods" v-bind:key="elem.name">
+                <span class="tag is-primary" id="section" v-if="elem.attributes.section">{{elem.attributes.section}}</span>
+                  <p class="is-size-6-mobile">{{elem.name}}</p>
+                <div class="tags is-right">
+                  <span v-if="elem.badges.vegetarian" class="tag is-success">Vegetarian</span>
+                  <span v-if="elem.badges.vegan" class="tag is-success">Vegan</span>
+                  <span v-if="elem.badges.halal" class="tag is-danger">Halal</span>
+                  <span v-if="elem.badges.has_fish" class="tag is-info">Fish</span>
+                  <span v-if="elem.badges.has_nuts" class="tag is-black">Nuts</span>
+                  <span v-if="elem.badges.has_soy" class="tag is-dark">Soy</span>
+                  <span v-if="elem.badges.has_egg" class="tag is-warning">Eggs</span>
+                  <span v-if="elem.badges.has_dairy" class="tag is-light">Dairy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="accordion" style="background-color:white" :class="{'is-active':(mealPeriod===timeOfDay)}">
+        <div class="accordion-header toggle">
+          <p>{{mealPeriod}}</p>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content" style="padding:0;">
+            <div class="panel">
+              <div class="panel-block" v-for="elem in this.foods" v-bind:key="elem.name">
+                <span class="tag is-primary" id="section" v-if="elem.attributes.section">{{elem.attributes.section}}</span>
+                  <p class="is-size-6-mobile">{{elem.name}}</p>
+                <div class="tags is-right">
+                  <span v-if="elem.badges.vegetarian" class="tag is-success">Vegetarian</span>
+                  <span v-if="elem.badges.vegan" class="tag is-success">Vegan</span>
+                  <span v-if="elem.badges.halal" class="tag is-danger">Halal</span>
+                  <span v-if="elem.badges.has_fish" class="tag is-info">Fish</span>
+                  <span v-if="elem.badges.has_nuts" class="tag is-black">Nuts</span>
+                  <span v-if="elem.badges.has_soy" class="tag is-dark">Soy</span>
+                  <span v-if="elem.badges.has_egg" class="tag is-warning">Eggs</span>
+                  <span v-if="elem.badges.has_dairy" class="tag is-light">Dairy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="accordion" style="background-color:white" :class="{'is-active':(mealPeriod===timeOfDay)}">
+        <div class="accordion-header toggle">
+          <p>{{mealPeriod}}</p>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content" style="padding:0;">
+            <div class="panel">
+              <div class="panel-block" v-for="elem in this.foods" v-bind:key="elem.name">
+                <span class="tag is-primary" id="section" v-if="elem.attributes.section">{{elem.attributes.section}}</span>
+                  <p class="is-size-6-mobile">{{elem.name}}</p>
+                <div class="tags is-right">
+                  <span v-if="elem.badges.vegetarian" class="tag is-success">Vegetarian</span>
+                  <span v-if="elem.badges.vegan" class="tag is-success">Vegan</span>
+                  <span v-if="elem.badges.halal" class="tag is-danger">Halal</span>
+                  <span v-if="elem.badges.has_fish" class="tag is-info">Fish</span>
+                  <span v-if="elem.badges.has_nuts" class="tag is-black">Nuts</span>
+                  <span v-if="elem.badges.has_soy" class="tag is-dark">Soy</span>
+                  <span v-if="elem.badges.has_egg" class="tag is-warning">Eggs</span>
+                  <span v-if="elem.badges.has_dairy" class="tag is-light">Dairy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>  
 
     </section>
   </div>

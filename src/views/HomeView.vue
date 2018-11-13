@@ -1,7 +1,7 @@
 <template>
   <div class="homeview">
     <div class = "container is-full-hd">
-      <UCSC></UCSC>
+      <UCSC v-if="currentCollege == 'UCSC'"></UCSC>
     </div>
   </div>
 </template>
@@ -24,6 +24,8 @@ export default {
   methods: {
 
   },mounted() {
+  },beforeMount(){
+    this.currentCollege = localStorage.getItem('selectedUniversity') || localStorage.setItem('selectedUniversity', 'UCSC');
   }
 };
 </script>
